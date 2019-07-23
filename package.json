@@ -1,0 +1,30 @@
+{
+  "name": "exampleWalletConnect",
+  "version": "1.0.0",
+  "main": "build/bg/background.js",
+  "license": "MIT",
+  "scripts": {
+    "build": " npx babel src -d lib && browserify ./lib/bg/* -o ./build/bg/bundle.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "browserify": "^16.3.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "@binance-chain/javascript-sdk": "^2.14.4",
+    "@walletconnect/browser": "^1.0.0-beta.29",
+    "jsqr": "^1.2.0"
+  }
+}

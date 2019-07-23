@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<style type="text/css">
+  #mainPopup {
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+  }
+  h1 {
+    font-size: 1.4em;
+  }
+  
+</style>
+
+
+<div id="mainPopup">
+  <h1>Example WalletConnect !</h1>
+  <input id="mnemonic" />
+  <button id="buttonSetMnemonic">Set mnemonic</button>
+
+  <br>
+  <br>
+  <ul>
+    <li>BNB address: <span id="myAddress"></span></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <button id="connectBinance">Connect to Binance</button>
+
+  <br>
+  <br>
+
+  <ul>
+    <li>Connected: <span id="isConected">true</span></li>
+    <li>Name: <span id="nameConect"></span></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <button id="rejectConnection">reject session</button>
+
+  <br>
+  <br>
+
+  <ul>
+    <li id="rowNewId">New request id: <span id="requestId"></span></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <button id="rejectRequest">reject request</button>
+  <button id="approveRequest">approve request</button>
+</div>
+
+<script src="browser_action.js"></script>
